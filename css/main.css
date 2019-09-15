@@ -185,7 +185,7 @@ p{
 }
 
 .contact * + * {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 .contact-form {
@@ -342,14 +342,16 @@ footer .social-links {
     }
 
     .contact-form textarea{
-        height: 10em;
+        height: 8em;
     }
     .contact-form input[type=submit]{
-        width: 40%;
-        height: 3em;
+        width: 45%;
+        height: 2.5em;
         margin-bottom: 2.5em;
+        margin-top: 1.7em;
+        padding: 0.5rem 2rem;
     }
     .contact-form input[type=text]{
-        height: 2.6em;
+        height: 2.3em;
     }
 }
