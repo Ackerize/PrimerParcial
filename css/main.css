@@ -374,7 +374,7 @@ footer .social-links li{
         height: 8em;
     }
     .contact-form input[type=submit]{
-        width: 45%;
+        width: 43%;
         height: 2.5em;
         margin-bottom: 2.5em;
         margin-top: 1.7em;
@@ -382,5 +382,6 @@ footer .social-links li{
     }
     .contact-form input[type=text]{
         height: 2.3em;
+        width: 400px;
     }
 }
