@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: calc(0.5em + 1vh);
+    /*font-size: calc(0.5em + 1vh);*/
 }
 
 /* El estilo base para moviles */
@@ -20,7 +20,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .src-only {
@@ -81,17 +81,37 @@ p{
 .social-links{
     list-style: none;
     padding: 0;
-    margin-top: 3em;
+    margin-top: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: center
+    justify-content: center;
+    align-items: flex-start;
 
 }
 
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    display: block;
+
+}
+
+.social-links li{
+    margin: 0 20px;
+}
+
+.social-links li a i{
+    display: block;
+    font-size: 3.1em;
+}
+
+a .fa-arrow-circle-down{
+    font-size: 2.3em;
+    margin: 1.3em 0 2.4em;
+}
+
+.big-hero a{
+    color: #0AC693;
+    text-decoration: none;
 }
 
 
@@ -229,8 +249,8 @@ footer{
     color:#D7DEE6;
 }
 
-footer .social-links {
-    margin: 0;
+footer .social-links li{
+    margin-top: 2.3em;
 }
 
 .menu {
@@ -259,6 +279,11 @@ footer .social-links {
     text-decoration: none;
     
 }
+.menu li a:hover{
+    color: #F74442;
+
+    
+}
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
@@ -284,7 +309,9 @@ footer .social-links {
     }
 
     .show-desktop {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .hide-desktop {
@@ -339,6 +366,8 @@ footer .social-links {
     }
     .about h2{
         grid-column: h;
+        margin-top: 0;
+
     }
 
     .contact-form textarea{
