@@ -350,22 +350,9 @@ footer .social-links li{
 
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
-        .post ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        
-        .post ul li{
-            min-height: 350px;
-            max-height: 3500px;
-            max-width: 260px;
-            margin: 1rem 2rem;
-            flex: 1 0 300px;
-        }
-
+    .post ul li {
+        max-width: 260px;
+    }
         .about>.container{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -419,6 +406,6 @@ footer .social-links li{
     }
 
     .post ul li{
-        max-width: 372px;
+        max-width: 310px;
     }
 }
