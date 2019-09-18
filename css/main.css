@@ -19,18 +19,24 @@ body {
     font-weight: 400;
 }
 
+/* Aplicar flexbox al header, ahi se ubicara el menu y el logo*/
 .header {
     display: flex;
     justify-content: space-between;
 }
 
+/* Ocultando al visibilidad del titulo del logo */
 .src-only {
     display: none;
 }
 
+/* Ocultando la visibilidad del icono "X" y del menu*/
+
 .hide-mobile {
     display: none;
 }
+
+/* Personalizando todos los parrafos de la pagina web, asignando tamaño de fuente, padding e interlineado*/
 
 p{
     font-size: 0.75em;
@@ -38,11 +44,14 @@ p{
     line-height: 25px;
 }
 
+/* Personalizando el ancho y margenes del logo */
+
 .logo {
     width: 90px;
     margin: 1em;
 }
 
+/* Ubicacion de los logos de la barra y "X", y aplicacion de flexbox al contenedor de los logos*/
 .options {
     color: inherit;
     text-decoration: none;
@@ -56,21 +65,28 @@ p{
     align-items: flex-start;
 
 }
+
+/* Personalizando el tamaño del icono "X" */
+
 .options i:last-child {
     font-size: 1.6rem;
 }
 
 /* Big area */
+
+/* Configuracion del ancho de la imagen de perfil */
 .big-hero img {
     width: 150px;
 }
 
+/* Personalizacion del tamaño de la fuente, peso de la fuente, separacion entre letras, y margen superior del H2*/
 .big-hero h2 {
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
+ /* Personalizacion del tamaño y color de fuente del parrafo descriptivo*/
 
 .big-hero p {
     font-size: 0.7em;;
@@ -78,9 +94,9 @@ p{
 
 }
 
+/* Social links */
 
-
-/* Social links*/
+/* Personalizacion del contenedor de los iconos de Github y Twitter */
 .social-links{
     list-style: none;
     padding: 0;
@@ -92,39 +108,37 @@ p{
 
 }
 
+/* Personalizacion del color y decoracion de los iconos*/
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
 
 }
 
+/* Personalizacion del padding de los elementos de la lista */
 .social-links li{
     padding: 0 0.5em;
 }
 
-
-
+/* Personalizacion del tamaño de los iconos de Github y Twitter */
 .social-links li a i{
     font-size: 3.1em;
 }
 
+/* Green area */
 
-
-.big-hero a{
-    color: #0AC693;
-    text-decoration: none;
-}
-
-
+ /* Personalizacion del color de fondo del area de publicaciones */
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/* Personalizacion de paddign y margen inferior del div que contiene a las publicaciones*/
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+
+/* Personalizacion de tamaño de fuente, peso de fuente, margen y transformar el texto en mayuscula del H2*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -132,29 +146,36 @@ p{
     margin: 1em;
 }
 
+/* Se le quitan las decoraciones a la lista */
 .post ul {
     list-style: none;
 }
 
+/* Se le asigna una altura minima, un ancho maximo y margenes a los elementos de la lista */
 .post ul li {
     min-height: 300px;
     max-width: 250px;
     margin: 2rem auto;
 }
 
+/* Personalizacion del color de fondo, alineacion de texto, padding inferior, esconder el excedente y esquinas redondeadas de las publicaciones */
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
-}
+} 
+
+/* Personalizando las dimensiones de las imagenes de las publicaciones */
 
 .post article img{
     height: 150px;
     width: 100%;
     object-fit: cover;
 }
+
+/* Personalizando el titulo de las publicaciones y si no caben en el tamaño de las publicaciones, generar el efecto ellipsis (...) */
 
 .post article h3 {
     color: #0D5061;
@@ -165,7 +186,7 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+ /* Personalizacion del parrafo de las publicaciones */
 .post article p {
     color:#112935;
     font-size: 0.75em;
