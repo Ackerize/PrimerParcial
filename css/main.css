@@ -85,6 +85,7 @@ p{
     list-style: none;
     padding: 0;
     margin-top: -1em;
+    margin-bottom: 4em;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -98,13 +99,12 @@ p{
 }
 
 .social-links li{
-    padding: 0 0.9em;
+    padding: 0 0.5em;
 }
 
 
 
 .social-links li a i{
-
     font-size: 3.1em;
 }
 
@@ -254,7 +254,9 @@ footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
-
+footer .social-links{
+    margin-bottom: 0;
+}
 
 .menu {
     background-color: #112935;
@@ -334,12 +336,15 @@ footer{
 
     a .fa-arrow-circle-down{
         font-size: 2.3em;
-        margin: 0.5em 0 2em;
+        padding: 0.5em 0 1em;
     }
 
-
-
-
+    .big-hero .social-links{
+        margin-bottom: 1em;
+    }
+    .about{
+        margin:2em 3em 3em;
+    }
 
     /*TODO: FALTA CSS */
 } 
@@ -386,7 +391,9 @@ footer{
         margin: 0 auto;
         max-width: 1440px;
     }
-
+    .post ul {
+        justify-content: space-around;
+    }
 
     .contact-form textarea{
         height: 8em;
@@ -401,6 +408,7 @@ footer{
     
     .post ul li{
         max-width: 310px;
+        margin: 1rem;
     }
 
     footer .social-links li {
