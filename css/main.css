@@ -125,12 +125,16 @@ p{
     font-size: 3.1em;
 }
 
+
+
+
 /* Green area */
 
  /* Personalizacion del color de fondo del area de publicaciones */
 .green-area {
     background-color: #0AC693; 
 }
+
 
 /* Personalizacion de paddign y margen inferior del div que contiene a las publicaciones*/
 .post {
@@ -196,10 +200,12 @@ p{
 
 /* About */
 
+/*Definicion de margenes de la seccion*/
 .about{
     margin:2em 2em 3em;
 }
 
+/*  Personalizacion de tamaño de fuente, peso de fuente, margen y transformar el texto en mayuscula del H2 */
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -207,10 +213,12 @@ p{
     margin: 2em;
 }
 
+/* Asignacion de ancho a la imagen */
 .bio-info img{
    width: 200px;
 }
 
+/* Personalizacion del parrafo de informacion */
 .bio-info p{
     font-size: 16px;
     padding: 2em;
@@ -219,6 +227,9 @@ p{
     letter-spacing: 2px;
 }
 
+/* Contact */
+
+/* Personalizacion del area de contacto*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -226,15 +237,18 @@ p{
     padding: 0px 1em;
 }
 
+/* Aplicacion de margen superior a los elementos del formulario */
 .contact * + * {
     margin-top: 1em;
 }
 
+/* Aplicacion de flexbox y se le cambia la direccion del main axix del formulario */
 .contact-form {
     display: flex;
     flex-direction: column;
 }
 
+/* Personalizando las entradas de texto del formulario */
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
@@ -244,6 +258,7 @@ p{
     height: 50px;
 }
 
+/* Cambiando la altura del area de texto "Mensaje" */
 .contact-form textarea{
     height: 160px;
 }
@@ -260,6 +275,8 @@ p{
  
 :-ms-input-placeholder { color: #D7DEE6; }
 
+
+/* Decoracion del boton "Contactar" */
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -267,18 +284,18 @@ p{
     font-size: 1rem;
 }
 
-.black-decoration{
-    background-image: url("../images/decoracion_oscura_small.svg");
-}
-
+/* Asignacion de color de fondo y color de texto en la seccion de Footer*/
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
 }
+
+/* Asignacion de margen inferior a los logos inferiores */
 footer .social-links{
     margin-bottom: 0;
 }
 
+/* Decoracion del menu */
 .menu {
     background-color: #112935;
     position: absolute;
@@ -289,22 +306,25 @@ footer .social-links{
     height: calc(100vh - 60px);
 }
 
+/* Personalizacion de alineacion de texto, padding y quitar la decoracion de los elementos del menu */
 .menu {
     list-style: none;
     text-align: left;
     padding: 1em;
 }
+/* Visualizacion de los elementos de la lista en bloque, y modificacion de padding y margen superior */
 .menu li {
     display: block;
     padding: 0.5em;
     margin-top: 5px;
 }
-
+/* Color de texto y quitar decoracion de los elementos del menu */
 .menu li a {
     color: white;
     text-decoration: none;
     
 }
+/* Al pasar el raton sobre algun elemento del menu, este cambia de color */
 .menu li a:hover{
     color: #F74442;
 
@@ -314,6 +334,7 @@ footer .social-links{
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
+    /* Personalizacion de la lista de publicaciones */
     .post ul {
         list-style: none;
         display: flex;
@@ -321,6 +342,7 @@ footer .social-links{
         justify-content: space-between;
     }
     
+    /* Asignacion de alto max y min, margenes de las publicaciones*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -328,22 +350,25 @@ footer .social-links{
         flex: 1 0 300px;
     }
 
-
+    /* Asignacion de ancho del logo y margenes */
     .logo {
         width: 150px;
         margin: 1.5em;
     }
 
+    /* Visibilidad del menu e icono (Flecha hacia abajo) */
     .show-desktop {
         display: flex;
         justify-content: center;
         align-items: flex-start;
     }
 
+    /* Ocultar la visibilidad de los iconos de barras y "X" */
     .hide-desktop {
         display: none;
     }
 
+    /* Decoracion del menu */
     .menu {
         background-color: #112935; 
         position: static;
@@ -354,27 +379,40 @@ footer .social-links{
         margin-top: 1em;
     }
 
-
+    /* Personalizacion del tamaño del icono (Flecha hacia abajo) y padding*/
     a .fa-arrow-circle-down{
         font-size: 2.3em;
         padding: 0.5em 0 1em;
+
     }
 
+    /* Personalizacion del margen inferior de los iconos (Github y Twitter) superiores */
     .big-hero .social-links{
         margin-bottom: 1em;
     }
+
+    /* Personalizacion de los margenes de la seccion "About" */
     .about{
         margin:2em 3em 3em;
     }
 
-    /*TODO: FALTA CSS */
+    /* Personalizacion de color del icono (Flecha hacia abajo) */
+    .big-hero a{
+        color: #0AC693;
+        text-decoration: none;
+    }
 } 
 
+
+/* Pesonalizando estilo para laptops*/
 @media only screen and (min-width: 1024px) {
 
+    /* Asignacion de ancho max de las publicaciones*/
     .post ul li {
         max-width: 260px;
     }
+
+    /* Creacion de un grid area para dividir "Acerca de" en 2 columnas */
     .about>.container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -383,6 +421,8 @@ footer .social-links{
                 "info contact";
         justify-items: center;
     }
+
+    /* Asignacion del grid area a utilizar */
     .bio-info{
         grid-area: info;
     }
@@ -394,6 +434,8 @@ footer .social-links{
         margin-top: 0;
 
     }
+
+    /* Decoracion del boton "Contactar" */
     .contact-form input[type=submit]{
         width: 43%;
         height: 2.5em;
@@ -401,24 +443,29 @@ footer .social-links{
         padding: 0.5rem 2rem;
     }
     
-    
 }
 
+/* Pesonalizando estilo para laptops L/Escritorio*/
 @media only screen and (min-width: 1440px) {
 
-    /*TODO: FALTA CSS */
+    /* Personalizacion del ancho y centrar el contenido del contenedor */
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
     }
+
+    /* Alineacion de los elementos de la seccion "Publicaciones" */
     .post ul {
         justify-content: space-around;
     }
 
+    /* Personalizacion del alto del texarea "Mensaje" */
     .contact-form textarea{
         height: 8em;
     }
+
+    /* Decoracion del boton "Contactar" */
     .contact-form input[type=submit]{
         width: 43%;
         height: 2.5em;
@@ -426,12 +473,13 @@ footer .social-links{
         padding: 0.5rem 2rem;
     }
 
-    
+    /* Asignacion de ancho max y margenes de las publicaciones*/
     .post ul li{
         max-width: 310px;
         margin: 1rem;
     }
 
+    /* Asignacion de margen superior a los iconos (Github y Twitter) inferiores*/
     footer .social-links li {
         margin-top: 1em;
     }
