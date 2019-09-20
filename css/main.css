@@ -19,6 +19,7 @@ body {
     font-weight: 400;
 }
 
+
 /* Aplicar flexbox al header, ahi se ubicara el menu y el logo*/
 .header {
     display: flex;
@@ -341,6 +342,11 @@ footer .social-links{
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    /* Modificacion del padding de los articulos publicados */
+    .post {
+        padding: 1em 3.9em;
+    }
     
     /* Asignacion de alto max y min, margenes de las publicaciones*/
     .post ul li {
@@ -410,6 +416,11 @@ footer .social-links{
     /* Asignacion de ancho max de las publicaciones*/
     .post ul li {
         max-width: 260px;
+    }
+
+    /* Modificacion del padding de los articulos publicados */
+    .post{
+        padding: 1em;
     }
 
     /* Creacion de un grid area para dividir "Acerca de" en 2 columnas */
